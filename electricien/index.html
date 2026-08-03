@@ -28,7 +28,7 @@
 </script>
 <style>
 :root{
-  --acc:#e0631e; --acc-dark:#7a2f0d; --dark:#1a1a1a; --dark2:#111;
+  --acc:#e0631e; --acc-dark:#7a2f0d; --acc-light:#ffd7a8; --dark:#1a1a1a; --dark2:#111;
   --ink:#0d1117; --paper:#f7f7f5; --paper2:#eef1f5; --line:rgba(13,13,15,.1);
   --sans:'Inter',sans-serif;
 }
@@ -89,10 +89,10 @@ nav.links a{font-size:.85rem;font-weight:600;text-decoration:none;color:var(--in
 .hero-form button:hover{opacity:.92;}
 .hero-form .status{font-size:.78rem;margin-top:10px;text-align:center;}
 
-.marquee{background:var(--ink);color:#fff;overflow:hidden;white-space:nowrap;padding:14px 0;}
+.marquee{background:var(--acc-light);color:#1a1a1a;overflow:hidden;white-space:nowrap;padding:14px 0;}
 .marquee-track{display:inline-flex;gap:36px;animation:mq 26s linear infinite;}
-.marquee span{font-size:.82rem;font-weight:600;letter-spacing:.03em;color:rgba(255,255,255,.85);}
-.marquee .dot{color:var(--acc);margin-left:36px;}
+.marquee span{font-size:.82rem;font-weight:600;letter-spacing:.03em;color:#1a1a1a;}
+.marquee .dot{color:var(--acc-dark);margin-left:36px;}
 @keyframes mq{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 @media(prefers-reduced-motion:reduce){.marquee-track{animation:none;}}
 
