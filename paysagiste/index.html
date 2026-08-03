@@ -63,29 +63,31 @@ nav.links a{font-size:.85rem;font-weight:600;text-decoration:none;color:var(--in
 
 .hero{position:relative;min-height:640px;display:flex;align-items:center;overflow:hidden;color:#fff;}
 .hero-bg{position:absolute;inset:0;background-image:linear-gradient(100deg,rgba(31,74,36,.94) 0%,rgba(31,74,36,.8) 38%,rgba(58,122,63,.5) 65%,rgba(58,122,63,.28) 100%),url('assets/hero-paysagiste.jpg');background-size:cover;background-position:center 40%;}
-.hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center;width:100%;padding:70px 20px;max-width:1180px;margin:0 auto;}
-@media(min-width:900px){.hero-inner{padding:70px 5vw;}}
-@media(max-width:900px){.hero-inner{grid-template-columns:1fr;gap:36px;padding:44px 20px 40px;}}
+.hero-inner{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;text-align:center;width:100%;padding:90px 20px 50px;max-width:820px;margin:0 auto;}
+@media(min-width:900px){.hero-inner{padding:90px 5vw 50px;}}
+@media(max-width:900px){.hero-inner{padding:50px 20px 36px;}}
 .hero-tag{display:inline-block;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:#c9e8ba;background:rgba(255,255,255,.1);padding:7px 14px;border-radius:100px;margin-bottom:18px;}
 .hero h1{font-size:clamp(2rem,4.6vw,3.2rem);line-height:1.08;margin-bottom:16px;}
 .hero h1 em{font-style:normal;color:#c9e8ba;}
-.hero-sub{font-size:1.02rem;color:rgba(255,255,255,.85);max-width:480px;margin-bottom:26px;line-height:1.6;}
-.hero-badges{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:30px;}
+.hero-sub{font-size:1.02rem;color:rgba(255,255,255,.85);max-width:520px;margin:0 auto 26px;line-height:1.6;}
+.hero-badges{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:30px;}
 .hero-badge{display:flex;align-items:center;gap:7px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.16);font-size:.78rem;font-weight:600;padding:8px 14px;border-radius:100px;}
-.hero-cta-row{display:flex;flex-wrap:wrap;gap:14px;}
+.hero-cta-row{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-bottom:34px;}
 .btn-primary{display:inline-flex;align-items:center;gap:9px;background:#fff;color:var(--acc-dark);font-weight:800;font-size:.95rem;padding:16px 26px;border-radius:100px;text-decoration:none;}
 .btn-outline{display:inline-flex;align-items:center;gap:9px;background:transparent;border:1.5px solid rgba(255,255,255,.4);color:#fff;font-weight:700;font-size:.95rem;padding:15px 24px;border-radius:100px;text-decoration:none;}
 
-.hero-form{position:relative;z-index:2;background:rgba(255,255,255,.97);color:var(--ink);border-radius:18px;padding:28px 26px;box-shadow:0 30px 70px rgba(0,0,0,.35);}
-.hero-form h3{font-size:1.1rem;margin-bottom:4px;}
-.hero-form p.sub{font-size:.8rem;color:#666;margin-bottom:18px;}
-.hero-form .row{margin-bottom:12px;}
+.hero-form{position:relative;z-index:2;background:rgba(255,255,255,.97);color:var(--ink);border-radius:18px;padding:22px 26px;box-shadow:0 30px 70px rgba(0,0,0,.35);width:100%;max-width:640px;}
+.hero-form h3{font-size:1rem;margin-bottom:14px;text-align:left;}
+.hero-form p.sub{display:none;}
+.hero-form .fields{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;}
+.hero-form .row{margin-bottom:0;flex:1;min-width:130px;text-align:left;}
 .hero-form label{display:block;font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:#888;margin-bottom:5px;}
 .hero-form input,.hero-form select{width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:9px;font-family:inherit;font-size:.9rem;background:#fff;}
 .hero-form input:focus,.hero-form select:focus{outline:none;border-color:var(--acc);}
-.hero-form button{width:100%;background:var(--acc);color:#fff;font-weight:800;font-size:.92rem;padding:14px;border:none;border-radius:9px;cursor:pointer;margin-top:6px;}
+.hero-form button{flex-shrink:0;background:var(--acc);color:#fff;font-weight:800;font-size:.92rem;padding:12px 22px;border:none;border-radius:9px;cursor:pointer;white-space:nowrap;}
 .hero-form button:hover{opacity:.92;}
-.hero-form .status{font-size:.78rem;margin-top:10px;text-align:center;}
+.hero-form .status{font-size:.78rem;margin-top:10px;text-align:center;flex-basis:100%;}
+@media(max-width:700px){.hero-form .fields{flex-direction:column;align-items:stretch;}.hero-form button{width:100%;}}
 
 .marquee{background:var(--ink);color:#fff;overflow:hidden;white-space:nowrap;padding:14px 0;}
 .marquee-track{display:inline-flex;gap:36px;animation:mq 26s linear infinite;}
@@ -257,22 +259,23 @@ footer{background:var(--ink);color:rgba(255,255,255,.6);padding:50px 0 26px;font
       </div>
     </div>
     <form class="hero-form" id="quick-form">
-      <h3>Devis gratuit en 2 minutes</h3>
-      <p class="sub">Un paysagiste vous rappelle sous 15 minutes.</p>
-      <div class="row"><label>Nom</label><input type="text" name="nom" required></div>
-      <div class="row"><label>Téléphone</label><input type="tel" name="telephone" required></div>
-      <div class="row">
-        <label>Votre besoin</label>
-        <select name="besoin">
-          <option>Création de jardin</option>
-          <option>Entretien espaces verts</option>
-          <option>Élagage / taille</option>
-          <option>Arrosage automatique</option>
-          <option>Autre demande</option>
-        </select>
+      <h3>🌿 Devis gratuit en 2 minutes — un paysagiste vous rappelle sous 15 minutes</h3>
+      <div class="fields">
+        <div class="row"><label>Nom</label><input type="text" name="nom" required></div>
+        <div class="row"><label>Téléphone</label><input type="tel" name="telephone" required></div>
+        <div class="row">
+          <label>Besoin</label>
+          <select name="besoin">
+            <option>Création de jardin</option>
+            <option>Entretien espaces verts</option>
+            <option>Élagage / taille</option>
+            <option>Arrosage automatique</option>
+            <option>Autre demande</option>
+          </select>
+        </div>
+        <button type="submit">Être rappelé →</button>
+        <p class="status" id="quick-form-status"></p>
       </div>
-      <button type="submit">Être rappelé →</button>
-      <p class="status" id="quick-form-status"></p>
     </form>
   </div>
 </section>

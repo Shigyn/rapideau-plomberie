@@ -63,9 +63,11 @@ nav.links a{font-size:.85rem;font-weight:600;text-decoration:none;color:var(--in
 
 .hero{position:relative;min-height:640px;display:flex;align-items:center;overflow:hidden;color:#fff;}
 .hero-bg{position:absolute;inset:0;background-image:linear-gradient(100deg,rgba(17,17,17,.94) 0%,rgba(17,17,17,.82) 38%,rgba(26,26,26,.55) 65%,rgba(26,26,26,.3) 100%),url('assets/hero-electricien.jpg');background-size:cover;background-position:center 25%;}
-.hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center;width:100%;padding:70px 20px;max-width:1180px;margin:0 auto;}
+.hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:.85fr 1.15fr;gap:50px;align-items:center;width:100%;padding:70px 20px;max-width:1180px;margin:0 auto;}
 @media(min-width:900px){.hero-inner{padding:70px 5vw;}}
-@media(max-width:900px){.hero-inner{grid-template-columns:1fr;gap:36px;padding:44px 20px 40px;}}
+@media(max-width:900px){.hero-inner{grid-template-columns:1fr;gap:36px;padding:44px 20px 40px;}.hero-inner>.hero-form{order:-1;}}
+.hero-text{order:2;}
+.hero-form{order:1;}
 .hero-tag{display:inline-block;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:var(--acc);background:rgba(255,255,255,.1);padding:7px 14px;border-radius:100px;margin-bottom:18px;}
 .hero h1{font-size:clamp(2rem,4.6vw,3.2rem);line-height:1.08;margin-bottom:16px;}
 .hero h1 em{font-style:normal;color:var(--acc);}
@@ -242,7 +244,7 @@ footer{background:var(--ink);color:rgba(255,255,255,.6);padding:50px 0 26px;font
 <section class="hero">
   <div class="hero-bg" aria-hidden="true"></div>
   <div class="hero-inner">
-    <div>
+    <div class="hero-text">
       <span class="hero-tag" data-editable-zone="hero_tag">Électricien à Béziers — RGE certifié</span>
       <h1><span data-editable-zone="hero_titre">Une panne électrique ?</span> <em data-editable-zone="hero_titre_accent">On sécurise votre installation.</em></h1>
       <p class="hero-sub" data-editable-zone="hero_sous_titre">Dépannage, mise aux normes, tableau électrique, domotique : Voltz Électricité intervient à Béziers et alentours, diagnostic gratuit avant toute intervention.</p>
