@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Votre panier — Cire Douce</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../boutique.css">
+</head>
+<body>
+
+<div class="demo-banner">🕯️ Site e-commerce de démonstration — aucune commande réelle n'est traitée</div>
+
+<header>
+  <div class="nav-inner">
+    <a href="../index.html" class="logo">Cire <em>Douce</em></a>
+    <nav class="links">
+      <a href="../boutique/index.html">Boutique</a>
+      <a href="../index.html#collection">Collection</a>
+      <a href="../index.html#apropos">À propos</a>
+    </nav>
+    <div class="header-right">
+      <a href="index.html" class="cart-btn">🛍️ Panier <span class="cart-count">2</span></a>
+    </div>
+  </div>
+</header>
+
+<section style="padding-top:50px;">
+  <div class="container">
+    <span class="tag">Étape 1/2</span>
+    <h1 style="font-size:clamp(1.8rem,3.6vw,2.6rem);margin-bottom:36px;">Votre panier.</h1>
+
+    <div class="panier-grid">
+      <div class="panier-list">
+        <div class="panier-item">
+          <img src="../assets/produit-douceur.jpg" alt="Bougie Douceur">
+          <div class="panier-item-info">
+            <h3>Douceur</h3>
+            <span>Fleur de coton, musc blanc</span>
+          </div>
+          <div class="qty-box"><button aria-label="Diminuer">−</button><span>1</span><button aria-label="Augmenter">+</button></div>
+          <span class="panier-item-price">26€</span>
+          <button class="panier-remove" aria-label="Retirer">✕</button>
+        </div>
+        <div class="panier-item">
+          <img src="../assets/produit-cocon.jpg" alt="Bougie Cocon">
+          <div class="panier-item-info">
+            <h3>Cocon</h3>
+            <span>Bois de santal, vanille, ambre</span>
+          </div>
+          <div class="qty-box"><button aria-label="Diminuer">−</button><span>1</span><button aria-label="Augmenter">+</button></div>
+          <span class="panier-item-price">28€</span>
+          <button class="panier-remove" aria-label="Retirer">✕</button>
+        </div>
+        <a href="../boutique/index.html" style="font-size:.86rem;font-weight:700;color:var(--terracotta);text-decoration:none;">← Continuer mes achats</a>
+      </div>
+
+      <div class="summary-card">
+        <h3>Récapitulatif</h3>
+        <div class="summary-row"><span>Sous-total</span><span>54€</span></div>
+        <div class="summary-row"><span>Livraison</span><span>Offerte</span></div>
+        <div class="summary-row total"><span>Total</span><b>54€</b></div>
+        <a href="../confirmation/index.html" class="btn-dark" style="display:flex;">Passer la commande →</a>
+        <p class="summary-note">Paiement sécurisé fictif — démonstration uniquement, aucun débit réel.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer style="margin-top:60px;">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="logo">Cire <em style="color:#f0c9a8;font-style:italic;">Douce</em></div>
+      <span>📞 06 12 34 56 78 · contact@cire-douce.fr</span>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Cire Douce — Site de démonstration, ne correspond à aucune entreprise réelle.</span>
+      <span><a href="https://locweb.fr" target="_blank" rel="noopener">Créé par LocWeb</a></span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
