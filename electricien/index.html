@@ -48,21 +48,18 @@ h1,h2,h3{font-weight:800;letter-spacing:-.02em;line-height:1.1;}
 .urgence-bar-inner span{opacity:.85;}
 .urgence-bar a{background:var(--acc);color:#2b1206;font-weight:800;padding:6px 14px;border-radius:100px;text-decoration:none;white-space:nowrap;font-size:.76rem;flex-shrink:0;}
 
-header{position:sticky;top:0;z-index:500;background:rgba(247,247,245,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;max-width:1180px;margin:0 auto;}
-@media(min-width:900px){.nav-inner{padding:14px 5vw;}}
-.logo{font-weight:900;font-size:1.15rem;color:var(--acc);text-decoration:none;white-space:nowrap;}
-.logo span{color:var(--ink);}
-nav.links{display:none;gap:28px;align-items:center;}
-nav.links a{font-size:.85rem;font-weight:600;text-decoration:none;color:var(--ink);}
-@media(min-width:860px){nav.links{display:flex;}}
+/* Pas de bandeau menu : header transparent flottant sur le hero, pas de barre pleine, tout passe par le bouton menu */
+header{position:absolute;top:0;left:0;right:0;z-index:500;background:transparent;padding:22px 0;}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:0 20px;max-width:1180px;margin:0 auto;}
+@media(min-width:900px){.nav-inner{padding:0 5vw;}}
+.logo{font-weight:900;font-size:1rem;color:#fff;text-decoration:none;white-space:nowrap;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(8px);padding:10px 18px;border-radius:100px;}
+.logo span{color:var(--acc);}
+nav.links{display:none;}
 .header-right{display:flex;align-items:center;gap:10px;}
-.google-badge{display:none;align-items:center;gap:5px;font-size:.78rem;font-weight:700;color:var(--ink);background:#fff;border:1px solid var(--line);padding:6px 11px;border-radius:100px;text-decoration:none;}
-@media(min-width:640px){.google-badge{display:inline-flex;}}
-.tel-btn{display:inline-flex;align-items:center;gap:8px;background:var(--acc);color:#fff;font-weight:800;font-size:.85rem;padding:11px 18px;border-radius:100px;text-decoration:none;white-space:nowrap;}
-.burger{display:flex;background:none;border:none;cursor:pointer;padding:6px;}
-@media(min-width:860px){.burger{display:none;}}
-.burger span{display:block;width:22px;height:2px;background:var(--ink);margin:4px 0;}
+.google-badge{display:none;}
+.tel-btn{display:none;}
+.burger{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(8px);border-radius:100px;cursor:pointer;padding:12px 16px;}
+.burger span{display:block;width:20px;height:2px;background:#fff;margin:4px 0;}
 
 .hero{position:relative;min-height:640px;display:flex;align-items:center;overflow:hidden;color:#fff;}
 .hero-bg{position:absolute;inset:0;background-image:linear-gradient(100deg,rgba(17,17,17,.94) 0%,rgba(17,17,17,.82) 38%,rgba(26,26,26,.55) 65%,rgba(26,26,26,.3) 100%),url('assets/hero-electricien.jpg');background-size:cover;background-position:center 25%;}
@@ -219,18 +216,7 @@ footer{background:var(--ink);color:rgba(255,255,255,.6);padding:50px 0 26px;font
 <header>
   <div class="nav-inner">
     <a href="#" class="logo">Voltz <span>Électricité</span></a>
-    <nav class="links">
-      <a href="#services">Services</a>
-      <a href="#realisations">Réalisations</a>
-      <a href="#zones">Zones</a>
-      <a href="#garanties">Garanties</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <div class="header-right">
-      <a href="https://www.google.com/maps" target="_blank" rel="noopener" class="google-badge">★ 4.8 Google</a>
-      <a href="tel:0745531434" class="tel-btn">📞 07 45 53 14 34</a>
-      <button class="burger" id="burgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
-    </div>
+    <button class="burger" id="burgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </header>
 

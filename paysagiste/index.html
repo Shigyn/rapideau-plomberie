@@ -46,18 +46,20 @@ h1,h2,h3{font-weight:800;letter-spacing:-.02em;line-height:1.1;}
 .urgence-bar-pill{display:inline-flex;align-items:center;gap:8px;background:var(--acc-dark);color:#fff;font-size:.76rem;font-weight:600;padding:9px 20px;border-radius:100px;box-shadow:0 8px 20px rgba(20,32,26,.18);}
 .urgence-bar-pill a{color:#c9e8ba;font-weight:800;text-decoration:underline;text-underline-offset:2px;}
 
-header{position:sticky;top:0;z-index:500;background:rgba(247,247,242,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;max-width:1180px;margin:0 auto;}
-@media(min-width:900px){.nav-inner{padding:14px 5vw;}}
-.logo{font-weight:900;font-size:1.15rem;color:var(--acc);text-decoration:none;white-space:nowrap;}
+/* Bandeau blanc opaque, logo centré, téléphone en texte simple à gauche */
+header{position:sticky;top:0;z-index:500;background:#fff;border-bottom:1px solid var(--line);}
+.nav-inner{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px;padding:16px 20px;max-width:1180px;margin:0 auto;}
+@media(min-width:900px){.nav-inner{padding:16px 5vw;}}
+.header-phone-plain{display:none;justify-self:start;align-items:center;gap:6px;font-size:.84rem;font-weight:700;color:var(--ink);text-decoration:none;white-space:nowrap;}
+@media(min-width:480px){.header-phone-plain{display:inline-flex;}}
+.logo{justify-self:center;font-weight:900;font-size:1.2rem;color:var(--acc-dark);text-decoration:none;white-space:nowrap;}
 .logo span{color:var(--ink);}
-nav.links{display:none;gap:28px;align-items:center;}
-nav.links a{font-size:.85rem;font-weight:600;text-decoration:none;color:var(--ink);}
+.header-right{justify-self:end;display:flex;align-items:center;gap:20px;}
+nav.links{display:none;gap:20px;align-items:center;}
+nav.links a{font-size:.82rem;font-weight:600;text-decoration:none;color:var(--ink);}
 @media(min-width:860px){nav.links{display:flex;}}
-.header-right{display:flex;align-items:center;gap:10px;}
-.google-badge{display:none;align-items:center;gap:5px;font-size:.78rem;font-weight:700;color:var(--ink);background:#fff;border:1px solid var(--line);padding:6px 11px;border-radius:100px;text-decoration:none;}
-@media(min-width:640px){.google-badge{display:inline-flex;}}
-.tel-btn{display:inline-flex;align-items:center;gap:8px;background:var(--acc);color:#fff;font-weight:800;font-size:.85rem;padding:11px 18px;border-radius:100px;text-decoration:none;white-space:nowrap;}
+.google-badge{display:none;}
+.tel-btn{display:none;}
 .burger{display:flex;background:none;border:none;cursor:pointer;padding:6px;}
 @media(min-width:860px){.burger{display:none;}}
 .burger span{display:block;width:22px;height:2px;background:var(--ink);margin:4px 0;}
@@ -216,17 +218,16 @@ footer{background:var(--ink);color:rgba(255,255,255,.6);padding:50px 0 26px;font
 
 <header>
   <div class="nav-inner">
+    <a href="tel:0745531434" class="header-phone-plain">📞 07 45 53 14 34</a>
     <a href="#" class="logo">Verdura <span>Paysage</span></a>
-    <nav class="links">
-      <a href="#services">Services</a>
-      <a href="#realisations">Réalisations</a>
-      <a href="#zones">Zones</a>
-      <a href="#garanties">Garanties</a>
-      <a href="#contact">Contact</a>
-    </nav>
     <div class="header-right">
-      <a href="https://www.google.com/maps" target="_blank" rel="noopener" class="google-badge">★ 4.9 Google</a>
-      <a href="tel:0745531434" class="tel-btn">📞 07 45 53 14 34</a>
+      <nav class="links">
+        <a href="#services">Services</a>
+        <a href="#realisations">Réalisations</a>
+        <a href="#zones">Zones</a>
+        <a href="#garanties">Garanties</a>
+        <a href="#contact">Contact</a>
+      </nav>
       <button class="burger" id="burgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </div>

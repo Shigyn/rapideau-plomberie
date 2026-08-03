@@ -49,14 +49,18 @@ h1,h2,h3{font-family:var(--serif);font-weight:600;letter-spacing:-.01em;line-hei
 .urgence-bar a{color:var(--gold);font-weight:800;text-decoration:none;}
 @media(prefers-reduced-motion:reduce){.urgence-bar-msg{transition:none;}}
 
-/* Header sticky */
-header{position:sticky;top:0;z-index:500;background:rgba(250,246,242,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;max-width:1180px;margin:0 auto;}
-@media(min-width:900px){.nav-inner{padding:14px 5vw;}}
-.logo{font-family:var(--serif);font-weight:700;font-size:1.25rem;color:var(--rose);text-decoration:none;white-space:nowrap;}
-.logo span{color:var(--ink);}
+/* Header transparent flottant sur le hero, devient plein en scrollant */
+header{position:absolute;top:38px;left:0;right:0;z-index:500;background:transparent;padding:14px 0;transition:background .3s ease,padding .3s ease,box-shadow .3s ease;}
+header.scrolled{position:fixed;top:0;background:rgba(250,246,242,.94);backdrop-filter:blur(12px);box-shadow:0 4px 20px rgba(0,0,0,.08);padding:10px 0;}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:0 20px;max-width:1180px;margin:0 auto;}
+@media(min-width:900px){.nav-inner{padding:0 5vw;}}
+.logo{font-family:var(--serif);font-weight:700;font-size:1.25rem;color:#fff;text-decoration:none;white-space:nowrap;text-shadow:0 1px 8px rgba(0,0,0,.45);transition:color .3s,text-shadow .3s;}
+.logo span{color:rgba(255,255,255,.9);transition:color .3s;}
+header.scrolled .logo{color:var(--rose);text-shadow:none;}
+header.scrolled .logo span{color:var(--ink);}
 nav.links{display:none;gap:28px;align-items:center;}
-nav.links a{font-size:.85rem;font-weight:600;text-decoration:none;color:var(--ink);}
+nav.links a{font-size:.85rem;font-weight:600;text-decoration:none;color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.4);transition:color .3s,text-shadow .3s;}
+header.scrolled nav.links a{color:var(--ink);text-shadow:none;}
 @media(min-width:860px){nav.links{display:flex;}}
 .header-right{display:flex;align-items:center;gap:10px;}
 .google-badge{display:none;align-items:center;gap:5px;font-size:.78rem;font-weight:700;color:var(--ink);background:#fff;border:1px solid var(--line);padding:6px 11px;border-radius:100px;text-decoration:none;}
@@ -64,7 +68,8 @@ nav.links a{font-size:.85rem;font-weight:600;text-decoration:none;color:var(--in
 .tel-btn{display:inline-flex;align-items:center;gap:8px;background:var(--rose);color:#fff;font-weight:800;font-size:.85rem;padding:11px 18px;border-radius:100px;text-decoration:none;white-space:nowrap;}
 .burger{display:flex;background:none;border:none;cursor:pointer;padding:6px;}
 @media(min-width:860px){.burger{display:none;}}
-.burger span{display:block;width:22px;height:2px;background:var(--ink);margin:4px 0;}
+.burger span{display:block;width:22px;height:2px;background:#fff;margin:4px 0;transition:background .3s;}
+header.scrolled .burger span{background:var(--ink);}
 
 /* Hero — plein cadre, texte ancré en bas, carte flottante coin bas-droit */
 .hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;overflow:hidden;color:#fff;}
@@ -626,6 +631,15 @@ footer{background:var(--ink);color:rgba(255,255,255,.6);padding:50px 0 26px;font
 <script src="../contenu-loader.js" defer></script>
 
 <script>
+// Header transparent sur le hero, plein une fois scrollé
+(function(){
+  const header = document.querySelector('header');
+  if (!header) return;
+  function update(){ header.classList.toggle('scrolled', window.scrollY > 60); }
+  window.addEventListener('scroll', update, { passive: true });
+  update();
+})();
+
 // Bandeau d'annonce : rotation entre 2 messages
 (function(){
   const msgs = document.querySelectorAll('#annonceBar .urgence-bar-msg');
