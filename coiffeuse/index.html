@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rosalie Coiffure & Beauté — Salon à Béziers | Sur rendez-vous</title>
+<meta name="description" content="Rosalie Coiffure & Beauté — salon de coiffure et institut à Béziers. Coupe, coloration végétale, soins, coiffure événementielle. Sur rendez-vous.">
+<meta property="og:title" content="Rosalie Coiffure & Beauté — Salon à Béziers">
+<meta property="og:description" content="Coupe, coloration, soins, coiffure événementielle. Sur rendez-vous.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/hero-coiffeuse.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  "name": "Rosalie Coiffure & Beauté",
+  "image": "assets/hero-coiffeuse.jpg",
+  "telephone": "+33652841739",
+  "address": { "@type": "PostalAddress", "addressLocality": "Béziers", "addressRegion": "Occitanie", "addressCountry": "FR" },
+  "areaServed": ["Béziers", "Boujan-sur-Libron", "Lignan-sur-Orb", "Bassan", "Cers"],
+  "openingHours": "Tu-Sa 09:00-19:00",
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "184" }
+}
+</script>
+<style>
+:root{
+  --rose:#9c3b52; --rose-dark:#3d1522; --rose-mid:#6b2740; --gold:#c6a15b;
+  --ink:#241419; --paper:#faf6f2; --paper2:#f3e6e1; --line:rgba(36,20,25,.1);
+  --sans:'Inter',sans-serif; --serif:'Fraunces',serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:auto;}
+body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.6;overflow-x:hidden;}
+img{max-width:100%;display:block;}
+a{color:inherit;}
+.container{max-width:1180px;margin:0 auto;padding:0 20px;}
+@media(min-width:900px){.container{padding:0 5vw;}}
+h1,h2,h3{font-family:var(--serif);font-weight:600;letter-spacing:-.01em;line-height:1.1;}
+.tag{display:inline-block;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--rose);margin-bottom:10px;}
+
+/* Bandeau annonce */
+.urgence-bar{background:var(--rose-dark);color:#fff;text-align:center;font-size:.78rem;font-weight:600;padding:8px 16px;}
+.urgence-bar a{color:var(--gold);font-weight:800;text-decoration:none;}
+
+/* Header sticky */
+header{position:sticky;top:0;z-index:500;background:rgba(250,246,242,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;max-width:1180px;margin:0 auto;}
+@media(min-width:900px){.nav-inner{padding:14px 5vw;}}
+.logo{font-family:var(--serif);font-weight:700;font-size:1.25rem;color:var(--rose);text-decoration:none;white-space:nowrap;}
+.logo span{color:var(--ink);}
+nav.links{display:none;gap:28px;align-items:center;}
+nav.links a{font-size:.85rem;font-weight:600;text-decoration:none;color:var(--ink);}
+@media(min-width:860px){nav.links{display:flex;}}
+.header-right{display:flex;align-items:center;gap:10px;}
+.google-badge{display:none;align-items:center;gap:5px;font-size:.78rem;font-weight:700;color:var(--ink);background:#fff;border:1px solid var(--line);padding:6px 11px;border-radius:100px;text-decoration:none;}
+@media(min-width:640px){.google-badge{display:inline-flex;}}
+.tel-btn{display:inline-flex;align-items:center;gap:8px;background:var(--rose);color:#fff;font-weight:800;font-size:.85rem;padding:11px 18px;border-radius:100px;text-decoration:none;white-space:nowrap;}
+.burger{display:flex;background:none;border:none;cursor:pointer;padding:6px;}
+@media(min-width:860px){.burger{display:none;}}
+.burger span{display:block;width:22px;height:2px;background:var(--ink);margin:4px 0;}
+
+/* Hero — plein cadre, texte ancré en bas, carte flottante coin bas-droit */
+.hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;overflow:hidden;color:#fff;}
+.hero-bg{position:absolute;inset:0;background-image:linear-gradient(180deg,rgba(36,15,23,.05) 0%,rgba(36,15,23,.25) 45%,rgba(24,9,15,.94) 100%),url('assets/hero-coiffeuse.jpg');background-size:cover;background-position:center 22%;}
+.hero-inner{position:relative;z-index:2;width:100%;max-width:1180px;margin:0 auto;padding:0 20px 56px;display:flex;justify-content:space-between;align-items:flex-end;gap:28px;}
+@media(min-width:900px){.hero-inner{padding:0 5vw 64px;}}
+@media(max-width:880px){.hero-inner{flex-direction:column;align-items:stretch;padding:0 20px 40px;}}
+.hero-text{max-width:600px;}
+.hero-tag{display:inline-block;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:var(--gold);background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);padding:7px 14px;border-radius:100px;margin-bottom:20px;}
+.hero h1{font-size:clamp(2.1rem,4.8vw,3.5rem);line-height:1.06;margin-bottom:18px;}
+.hero h1 em{font-style:italic;color:var(--gold);}
+.hero-sub{font-size:1.02rem;color:rgba(255,255,255,.82);max-width:460px;margin-bottom:26px;line-height:1.65;}
+.hero-badges{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px;}
+.hero-badge{display:flex;align-items:center;gap:7px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);font-size:.78rem;font-weight:600;padding:8px 14px;border-radius:100px;}
+.hero-cta-row{display:flex;flex-wrap:wrap;gap:14px;}
+.btn-primary{display:inline-flex;align-items:center;gap:9px;background:var(--gold);color:var(--rose-dark);font-weight:800;font-size:.95rem;padding:16px 26px;border-radius:100px;text-decoration:none;}
+.btn-outline{display:inline-flex;align-items:center;gap:9px;background:transparent;border:1.5px solid rgba(255,255,255,.4);color:#fff;font-weight:700;font-size:.95rem;padding:15px 24px;border-radius:100px;text-decoration:none;}
+
+/* Carte flottante — pas une colonne de grille, une carte ancrée qui "flotte" plus haut que le texte */
+.hero-form{position:relative;z-index:2;width:320px;flex-shrink:0;background:rgba(255,255,255,.97);color:var(--ink);border-radius:18px;padding:26px 24px;box-shadow:0 30px 70px rgba(0,0,0,.4);transform:translateY(-14px);}
+@media(max-width:880px){.hero-form{width:100%;transform:none;}}
+.hero-form h3{font-size:1.05rem;margin-bottom:4px;}
+.hero-form p.sub{font-family:var(--sans);font-size:.8rem;color:#666;margin-bottom:18px;}
+.hero-form .row{margin-bottom:12px;}
+.hero-form label{display:block;font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:#888;margin-bottom:5px;}
+.hero-form input,.hero-form select{width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:9px;font-family:var(--sans);font-size:.9rem;background:#fff;}
+.hero-form input:focus,.hero-form select:focus{outline:none;border-color:var(--rose);}
+.hero-form button{width:100%;background:var(--rose);color:#fff;font-weight:800;font-size:.92rem;padding:14px;border:none;border-radius:9px;cursor:pointer;margin-top:6px;font-family:var(--sans);}
+.hero-form button:hover{opacity:.92;}
+.hero-form .status{font-family:var(--sans);font-size:.78rem;margin-top:10px;text-align:center;}
+
+/* Marquee */
+.marquee{background:var(--ink);color:#fff;overflow:hidden;white-space:nowrap;padding:14px 0;}
+.marquee-track{display:inline-flex;gap:36px;animation:mq 26s linear infinite;}
+.marquee span{font-family:var(--serif);font-style:italic;font-size:.86rem;font-weight:500;letter-spacing:.02em;color:rgba(255,255,255,.85);}
+.marquee .dot{color:var(--gold);margin-left:36px;font-style:normal;}
+@keyframes mq{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+@media(prefers-reduced-motion:reduce){.marquee-track{animation:none;}}
+
+/* Sections generic */
+section{padding:80px 0;}
+.s-head{margin-bottom:44px;max-width:640px;}
+.s-head h2{font-size:clamp(1.7rem,3.2vw,2.4rem);}
+
+/* Prestations */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+@media(max-width:900px){.services-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:600px){.services-grid{grid-template-columns:1fr;}}
+.service-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px;}
+.service-card .ico{font-size:1.7rem;margin-bottom:14px;}
+.service-card h3{font-family:var(--sans);font-weight:800;font-size:1.02rem;margin-bottom:8px;}
+.service-card p{font-size:.86rem;color:#665056;margin-bottom:14px;}
+.service-tag{display:inline-block;font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--rose);background:var(--paper2);padding:5px 10px;border-radius:100px;}
+
+/* Réalisations */
+#realisations{background:var(--paper2);}
+.real-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+@media(max-width:700px){.real-grid{grid-template-columns:1fr 1fr;}}
+.real-item{border-radius:14px;overflow:hidden;aspect-ratio:4/3;position:relative;}
+.real-item img{width:100%;height:100%;object-fit:cover;}
+.real-item .cap{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(36,15,23,.88));color:#fff;font-size:.76rem;font-weight:600;padding:24px 14px 12px;}
+
+/* Expertise blocs */
+.expertise-bloc{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;margin-bottom:70px;}
+.expertise-bloc:last-child{margin-bottom:0;}
+.expertise-bloc.rev>.expertise-img{order:2;}
+@media(max-width:800px){.expertise-bloc{grid-template-columns:1fr;gap:24px;}.expertise-bloc.rev>.expertise-img{order:0;}}
+.expertise-img{border-radius:16px;overflow:hidden;aspect-ratio:4/3;}
+.expertise-img img{width:100%;height:100%;object-fit:cover;}
+.expertise-txt h3{font-size:1.5rem;margin-bottom:14px;}
+.expertise-txt p{color:#4a363b;}
+.expertise-txt ul{list-style:none;display:flex;flex-direction:column;gap:10px;margin-top:16px;}
+.expertise-txt li{font-size:.9rem;color:#4a363b;display:flex;gap:10px;align-items:flex-start;}
+.expertise-txt li::before{content:'✓';color:var(--rose);font-weight:800;flex-shrink:0;}
+
+/* Chiffres */
+#chiffres{background:var(--rose-dark);color:#fff;}
+.chiffres-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center;}
+@media(max-width:700px){.chiffres-grid{grid-template-columns:1fr 1fr;}}
+.chiffre-num{font-family:var(--serif);font-size:clamp(2rem,4vw,2.8rem);font-weight:700;color:var(--gold);}
+.chiffre-lbl{font-size:.8rem;color:rgba(255,255,255,.7);margin-top:6px;}
+
+/* Charte */
+.charte-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+@media(max-width:800px){.charte-grid{grid-template-columns:1fr 1fr;}}
+.charte-item{text-align:left;}
+.charte-num{font-family:var(--serif);font-weight:700;font-size:1.7rem;-webkit-text-stroke:1.5px var(--rose);color:transparent;display:block;margin-bottom:10px;}
+.charte-item h3{font-family:var(--sans);font-weight:800;font-size:.98rem;margin-bottom:6px;}
+.charte-item p{font-size:.82rem;color:#665056;}
+
+/* Tarifs */
+#tarifs{background:var(--paper2);}
+.tarifs-list{display:flex;flex-direction:column;gap:2px;background:var(--line);border-radius:14px;overflow:hidden;}
+.tarif-row{background:#fff;display:flex;justify-content:space-between;align-items:center;padding:18px 24px;flex-wrap:wrap;gap:6px;}
+.tarif-row .name{font-weight:700;font-size:.94rem;}
+.tarif-row .desc{font-size:.8rem;color:#665056;display:block;}
+.tarif-row .price{font-family:var(--serif);font-weight:700;font-size:1.15rem;color:var(--rose);white-space:nowrap;}
+
+/* Zones */
+.zones-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;}
+@media(max-width:800px){.zones-grid{grid-template-columns:repeat(2,1fr);}}
+.zone-item{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;text-align:center;font-weight:700;font-size:.88rem;}
+.zone-item.base{background:var(--rose);color:#fff;border-color:var(--rose);}
+.zone-item .sub{display:block;font-size:.66rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;opacity:.7;margin-top:3px;}
+
+/* Garanties */
+#garanties{background:var(--rose);color:#fff;}
+.garanties-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+@media(max-width:800px){.garanties-grid{grid-template-columns:1fr 1fr;}}
+.garantie-card{background:rgba(255,255,255,.1);border-radius:14px;padding:22px;}
+.garantie-card .ico{font-size:1.5rem;margin-bottom:10px;}
+.garantie-card h3{font-family:var(--sans);font-weight:800;font-size:.92rem;margin-bottom:6px;}
+.garantie-card p{font-size:.8rem;color:rgba(255,255,255,.8);}
+
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;}
+@media(max-width:800px){.contact-grid{grid-template-columns:1fr;}}
+.contact-form .row{margin-bottom:16px;}
+.contact-form label{display:block;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:#7a656a;margin-bottom:6px;}
+.contact-form input,.contact-form textarea{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:10px;font-family:var(--sans);font-size:.92rem;}
+.contact-form textarea{min-height:110px;resize:vertical;}
+.contact-form button{background:var(--rose);color:#fff;font-weight:800;font-size:.95rem;padding:15px 28px;border:none;border-radius:10px;cursor:pointer;font-family:var(--sans);}
+.contact-side{background:var(--paper2);border-radius:16px;padding:30px;}
+.contact-side .item{display:flex;gap:14px;margin-bottom:22px;}
+.contact-side .item:last-child{margin-bottom:0;}
+.contact-side .item .ico{font-size:1.3rem;}
+.contact-side .item strong{display:block;font-size:.92rem;margin-bottom:2px;}
+.contact-side .item span{font-size:.84rem;color:#665056;}
+
+/* Footer */
+footer{background:var(--ink);color:rgba(255,255,255,.6);padding:50px 0 26px;font-size:.84rem;}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:36px;margin-bottom:36px;}
+@media(max-width:700px){.footer-grid{grid-template-columns:1fr;gap:26px;}}
+.footer-grid h4{color:#fff;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin-bottom:14px;}
+.footer-grid ul{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.footer-grid a{text-decoration:none;color:rgba(255,255,255,.6);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.76rem;}
+.footer-bottom a{text-decoration:underline;color:rgba(255,255,255,.5);}
+
+/* Floating */
+.wa-float{position:fixed;bottom:24px;right:24px;z-index:600;background:#25d366;color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 10px 26px rgba(0,0,0,.3);font-size:1.4rem;}
+.top-btn{position:fixed;bottom:24px;left:24px;z-index:600;background:#fff;border:1px solid var(--line);width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .25s;font-size:1.1rem;}
+.top-btn.show{opacity:1;pointer-events:auto;}
+
+/* Reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1);}
+.rv.on{opacity:1;transform:none;}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;}}
+
+/* Popup lead */
+.lead-popup{position:fixed;inset:0;z-index:9000;display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;pointer-events:none;transition:opacity .3s;}
+.lead-popup.open{opacity:1;pointer-events:auto;}
+.lead-popup-bg{position:absolute;inset:0;background:rgba(24,9,15,.65);}
+.lead-popup-box{position:relative;background:#fff;border-radius:18px;padding:30px;max-width:380px;width:100%;box-shadow:0 30px 70px rgba(0,0,0,.4);}
+.lead-popup-box h3{font-size:1.2rem;margin-bottom:8px;}
+.lead-popup-box p{font-family:var(--sans);font-size:.85rem;color:#665056;margin-bottom:18px;}
+.lead-popup-close{position:absolute;top:14px;right:14px;background:var(--paper2);border:none;width:30px;height:30px;border-radius:50%;cursor:pointer;}
+.lead-choice{display:flex;flex-direction:column;gap:10px;}
+.lead-choice button{padding:13px;border-radius:10px;border:1px solid var(--line);background:#fff;font-family:var(--sans);font-size:.88rem;font-weight:600;cursor:pointer;text-align:left;}
+.lead-choice button:hover{border-color:var(--rose);}
+
+/* Mobile nav panel */
+.mobile-panel{position:fixed;top:0;left:0;right:0;bottom:0;z-index:900;background:#fff;transform:translateX(100%);transition:transform .3s;padding:90px 30px 30px;}
+.mobile-panel.open{transform:translateX(0);}
+.mobile-panel a{display:block;padding:16px 0;font-size:1.1rem;font-weight:700;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);}
+.mobile-panel-close{position:absolute;top:20px;right:20px;background:none;border:none;font-size:1.6rem;cursor:pointer;}
+</style>
+</head>
+<body>
+
+<div class="urgence-bar">✨ Coloration végétale bio disponible — <a href="#contact">Prendre rendez-vous</a></div>
+
+<header>
+  <div class="nav-inner">
+    <a href="#" class="logo">Rosalie <span>Coiffure</span></a>
+    <nav class="links">
+      <a href="#services">Prestations</a>
+      <a href="#realisations">Réalisations</a>
+      <a href="#zones">Zones</a>
+      <a href="#garanties">Engagements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-right">
+      <a href="https://www.google.com/maps" target="_blank" rel="noopener" class="google-badge">★ 4.9 Google</a>
+      <a href="tel:0652841739" class="tel-btn">📞 06 52 84 17 39</a>
+      <button class="burger" id="burgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-panel" id="mobilePanel">
+  <button class="mobile-panel-close" id="mobilePanelClose" aria-label="Fermer">✕</button>
+  <a href="#services">Prestations</a>
+  <a href="#realisations">Réalisations</a>
+  <a href="#zones">Zones</a>
+  <a href="#garanties">Engagements</a>
+  <a href="#contact">Contact</a>
+  <a href="tel:0652841739">📞 06 52 84 17 39</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <span class="hero-tag" data-editable-zone="hero_tag">Coiffure & beauté — Béziers</span>
+      <h1><span data-editable-zone="hero_titre">L'art de sublimer</span> <em data-editable-zone="hero_titre_accent">vos cheveux.</em></h1>
+      <p class="hero-sub" data-editable-zone="hero_sous_titre">Coupe, coloration végétale, soins et coiffure événementielle : Rosalie vous reçoit sur rendez-vous dans un salon pensé pour prendre le temps.</p>
+      <div class="hero-badges">
+        <span class="hero-badge">🌿 Coloration végétale</span>
+        <span class="hero-badge">✂️ Sur rendez-vous</span>
+        <span class="hero-badge">⭐ 4.9 sur Google</span>
+      </div>
+      <div class="hero-cta-row">
+        <a href="tel:0652841739" class="btn-primary">📞 Appeler le salon</a>
+        <a href="#services" class="btn-outline">Voir les prestations</a>
+      </div>
+    </div>
+    <form class="hero-form" id="quick-form">
+      <h3>Réserver un créneau</h3>
+      <p class="sub">On vous rappelle sous 15 minutes.</p>
+      <div class="row">
+        <label>Nom</label>
+        <input type="text" name="nom" required>
+      </div>
+      <div class="row">
+        <label>Téléphone</label>
+        <input type="tel" name="telephone" required>
+      </div>
+      <div class="row">
+        <label>Prestation souhaitée</label>
+        <select name="besoin">
+          <option>Coupe & brushing</option>
+          <option>Coloration</option>
+          <option>Soin capillaire</option>
+          <option>Coiffure événementielle</option>
+          <option>Autre demande</option>
+        </select>
+      </div>
+      <button type="submit">Être rappelée →</button>
+      <p class="status" id="quick-form-status"></p>
+    </form>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Coiffeuse Béziers<span class="dot">◆</span></span>
+    <span>Coloration végétale<span class="dot">◆</span></span>
+    <span>Soins capillaires<span class="dot">◆</span></span>
+    <span>Coiffure événementielle<span class="dot">◆</span></span>
+    <span>Sur rendez-vous<span class="dot">◆</span></span>
+    <span>Produits professionnels<span class="dot">◆</span></span>
+    <span>Institut beauté<span class="dot">◆</span></span>
+    <span>Coiffeuse Béziers<span class="dot">◆</span></span>
+    <span>Coloration végétale<span class="dot">◆</span></span>
+    <span>Soins capillaires<span class="dot">◆</span></span>
+    <span>Coiffure événementielle<span class="dot">◆</span></span>
+    <span>Sur rendez-vous<span class="dot">◆</span></span>
+    <span>Produits professionnels<span class="dot">◆</span></span>
+    <span>Institut beauté<span class="dot">◆</span></span>
+  </div>
+</div>
+
+<!-- PRESTATIONS -->
+<section id="services">
+  <div class="container">
+    <div class="s-head rv">
+      <span class="tag">Nos prestations</span>
+      <h2>Un soin sur-mesure pour chaque cheveu.</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card rv">
+        <div class="ico">✂️</div>
+        <h3 data-editable-zone="service_1_titre">Coupe & brushing</h3>
+        <p data-editable-zone="service_1_desc">Coupe personnalisée selon votre visage et votre nature de cheveux, brushing longue tenue.</p>
+        <span class="service-tag">Femme · Homme</span>
+      </div>
+      <div class="service-card rv">
+        <div class="ico">🌿</div>
+        <h3 data-editable-zone="service_2_titre">Coloration végétale</h3>
+        <p data-editable-zone="service_2_desc">Coloration, mèches et balayage à base de pigments végétaux, sans ammoniaque.</p>
+        <span class="service-tag">Sans ammoniaque</span>
+      </div>
+      <div class="service-card rv">
+        <div class="ico">💆‍♀️</div>
+        <h3 data-editable-zone="service_3_titre">Soin capillaire</h3>
+        <p data-editable-zone="service_3_desc">Diagnostic capillaire et soin réparateur adapté : hydratation, brillance, réparation.</p>
+        <span class="service-tag">Diagnostic offert</span>
+      </div>
+      <div class="service-card rv">
+        <div class="ico">💍</div>
+        <h3 data-editable-zone="service_4_titre">Coiffure événementielle</h3>
+        <p data-editable-zone="service_4_desc">Mariage, soirée, shooting : essai coiffure puis mise en beauté le jour J.</p>
+        <span class="service-tag">Sur devis</span>
+      </div>
+      <div class="service-card rv">
+        <div class="ico">💫</div>
+        <h3 data-editable-zone="service_5_titre">Extensions & pose</h3>
+        <p data-editable-zone="service_5_desc">Pose d'extensions naturelles, allongement et volume, entretien inclus.</p>
+        <span class="service-tag">Kératine ou clips</span>
+      </div>
+      <div class="service-card rv">
+        <div class="ico">💄</div>
+        <h3 data-editable-zone="service_6_titre">Institut beauté</h3>
+        <p data-editable-zone="service_6_desc">Restructuration de sourcils, maquillage jour et soirée, en complément coiffure.</p>
+        <span class="service-tag">Accompagnement complet</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RÉALISATIONS -->
+<section id="realisations">
+  <div class="container">
+    <div class="s-head rv">
+      <span class="tag">Nos réalisations</span>
+      <h2>Un salon qui prend le temps de bien faire.</h2>
+    </div>
+    <div class="real-grid">
+      <div class="real-item rv"><img src="assets/hero-coiffeuse.jpg" alt="Brushing événementiel, salon Rosalie" loading="lazy"><span class="cap">Brushing événementiel</span></div>
+      <div class="real-item rv"><img src="assets/coloration.jpg" alt="Coloration sur-mesure" loading="lazy"><span class="cap">Coloration sur-mesure</span></div>
+      <div class="real-item rv"><img src="assets/salon-interieur.jpg" alt="Espace coiffage du salon" loading="lazy"><span class="cap">Notre espace coiffage</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERTISE -->
+<section>
+  <div class="container">
+    <div class="s-head rv">
+      <span class="tag">Notre expertise</span>
+      <h2>Le bon geste, le bon produit, à chaque rendez-vous.</h2>
+    </div>
+    <div class="expertise-bloc rv">
+      <div class="expertise-img"><img src="assets/coloration.jpg" alt="Coloration végétale" loading="lazy"></div>
+      <div class="expertise-txt">
+        <h3>Coloration végétale & sans ammoniaque</h3>
+        <p>Chaque coloration commence par un diagnostic de votre cuir chevelu et de vos cheveux. On choisit ensuite le pigment le plus respectueux pour un résultat lumineux, sans agresser la fibre.</p>
+        <ul>
+          <li>Diagnostic capillaire avant toute coloration</li>
+          <li>Pigments végétaux, sans ammoniaque</li>
+          <li>Conseil d'entretien personnalisé remis en fin de séance</li>
+        </ul>
+      </div>
+    </div>
+    <div class="expertise-bloc rv rev">
+      <div class="expertise-img"><img src="assets/salon-interieur.jpg" alt="Espace du salon Rosalie" loading="lazy"></div>
+      <div class="expertise-txt">
+        <h3>Un salon pensé pour votre bien-être</h3>
+        <p>Lumière naturelle, produits professionnels et rendez-vous espacés : on ne prend jamais deux clientes en même temps, pour vous offrir un moment vraiment à vous.</p>
+        <ul>
+          <li>Un seul rendez-vous à la fois, jamais de double réservation</li>
+          <li>Produits professionnels certifiés bio</li>
+          <li>Boisson chaude offerte pendant la pose</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHIFFRES -->
+<section id="chiffres">
+  <div class="container">
+    <div class="chiffres-grid">
+      <div class="rv"><div class="chiffre-num" data-compteur="8">0</div><div class="chiffre-lbl">Ans d'expérience</div></div>
+      <div class="rv"><div class="chiffre-num" data-compteur="4.9" data-decimal="1">0</div><div class="chiffre-lbl">Note Google</div></div>
+      <div class="rv"><div class="chiffre-num" data-compteur="1500">0</div><div class="chiffre-lbl">Client(e)s coiffé(e)s</div></div>
+      <div class="rv"><div class="chiffre-num" data-compteur="100">0</div><div class="chiffre-lbl">% produits professionnels</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CHARTE -->
+<section>
+  <div class="container">
+    <div class="s-head rv">
+      <span class="tag">Nos engagements</span>
+      <h2>Une charte simple, respectée à chaque rendez-vous.</h2>
+    </div>
+    <div class="charte-grid">
+      <div class="charte-item rv"><span class="charte-num">01</span><h3>Écoute</h3><p>Un vrai temps d'échange avant chaque coupe ou coloration.</p></div>
+      <div class="charte-item rv"><span class="charte-num">02</span><h3>Savoir-faire</h3><p>8 ans d'expérience, formations continues aux techniques actuelles.</p></div>
+      <div class="charte-item rv"><span class="charte-num">03</span><h3>Produits pro</h3><p>Marques professionnelles certifiées, aucune contrefaçon.</p></div>
+      <div class="charte-item rv"><span class="charte-num">04</span><h3>Convivialité</h3><p>Un rendez-vous à la fois, pour un moment vraiment à vous.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TARIFS -->
+<section id="tarifs">
+  <div class="container">
+    <div class="s-head rv">
+      <span class="tag">Tarifs</span>
+      <h2>Des prix clairs, annoncés avant le rendez-vous.</h2>
+    </div>
+    <div class="tarifs-list rv">
+      <div class="tarif-row">
+        <div><span class="name">Coupe Femme</span><span class="desc">Coupe + brushing</span></div>
+        <span class="price" data-editable-zone="prix_coupe_femme">À partir de 35€</span>
+      </div>
+      <div class="tarif-row">
+        <div><span class="name">Coupe Homme</span><span class="desc">Coupe + coiffage</span></div>
+        <span class="price" data-editable-zone="prix_coupe_homme">25€</span>
+      </div>
+      <div class="tarif-row">
+        <div><span class="name">Coloration complète</span><span class="desc">Diagnostic + pigment végétal</span></div>
+        <span class="price" data-editable-zone="prix_coloration">À partir de 65€</span>
+      </div>
+      <div class="tarif-row">
+        <div><span class="name">Coiffure événementielle</span><span class="desc">Essai + jour J</span></div>
+        <span class="price" data-editable-zone="prix_evenementiel">Sur devis</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ZONES -->
+<section id="zones">
+  <div class="container">
+    <div class="s-head rv">
+      <span class="tag">Zones desservies</span>
+      <h2>Basées à Béziers, sur rendez-vous dans le secteur.</h2>
+    </div>
+    <div class="zones-grid rv">
+      <div class="zone-item base">Béziers<span class="sub">Salon</span></div>
+      <div class="zone-item">Boujan-sur-Libron</div>
+      <div class="zone-item">Lignan-sur-Orb</div>
+      <div class="zone-item">Bassan</div>
+      <div class="zone-item">Cers</div>
+    </div>
+  </div>
+</section>
+
+<!-- GARANTIES -->
+<section id="garanties">
+  <div class="container">
+    <div class="s-head rv">
+      <span class="tag" style="color:#fff;">Engagements</span>
+      <h2>Des engagements concrets, pas juste des mots.</h2>
+    </div>
+    <div class="garanties-grid">
+      <div class="garantie-card rv"><div class="ico">🌿</div><h3>Produits professionnels</h3><p>Marques certifiées, aucune contrefaçon.</p></div>
+      <div class="garantie-card rv"><div class="ico">🧴</div><h3>Hygiène irréprochable</h3><p>Matériel désinfecté entre chaque cliente.</p></div>
+      <div class="garantie-card rv"><div class="ico">✅</div><h3>Satisfaction garantie</h3><p>Retouche offerte si le résultat ne vous convient pas.</p></div>
+      <div class="garantie-card rv"><div class="ico">💬</div><h3>Conseil personnalisé</h3><p>Diagnostic avant chaque prestation.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="s-head rv">
+      <span class="tag">Contact</span>
+      <h2>Une question, un rendez-vous ? Écrivez-nous.</h2>
+    </div>
+    <div class="contact-grid">
+      <form class="contact-form rv" id="contact-form">
+        <div class="row">
+          <label>Nom</label>
+          <input type="text" name="nom" required>
+        </div>
+        <div class="row">
+          <label>Téléphone</label>
+          <input type="tel" name="telephone" required>
+        </div>
+        <div class="row">
+          <label>Ville</label>
+          <input type="text" name="ville">
+        </div>
+        <div class="row">
+          <label>Message</label>
+          <textarea name="message" required></textarea>
+        </div>
+        <button type="submit">Envoyer ma demande</button>
+        <p class="status" id="contact-form-status" style="margin-top:12px;font-size:.85rem;"></p>
+      </form>
+      <div class="contact-side rv">
+        <div class="item"><span class="ico">📞</span><div><strong>Téléphone</strong><span><a href="tel:0652841739" data-editable-tel="tel_contact">06 52 84 17 39</a></span></div></div>
+        <div class="item"><span class="ico">✉️</span><div><strong>Email</strong><span><a href="mailto:contact@rosalie-coiffure.fr" data-editable-mailto="email_contact">contact@rosalie-coiffure.fr</a></span></div></div>
+        <div class="item"><span class="ico">🛡</span><div><strong>Garantie</strong><span>Retouche offerte, satisfaction garantie</span></div></div>
+        <div class="item"><span class="ico">📍</span><div><strong>Zone</strong><span>Béziers et alentours (12km)</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<a href="https://wa.me/33652841739" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+<button class="top-btn" id="topBtn" aria-label="Retour en haut">↑</button>
+
+<!-- POPUP LEAD -->
+<div class="lead-popup" id="leadPopup" aria-hidden="true">
+  <div class="lead-popup-bg" id="leadPopupBg"></div>
+  <div class="lead-popup-box">
+    <button class="lead-popup-close" id="leadPopupClose" aria-label="Fermer">✕</button>
+    <h3>Envie d'un nouveau look ?</h3>
+    <p>Dites-nous ce que vous cherchez, on vous rappelle en priorité pour caler un rendez-vous.</p>
+    <div class="lead-choice" id="leadChoiceStep">
+      <button data-val="Coupe">✂️ Coupe & brushing</button>
+      <button data-val="Coloration">🌿 Coloration</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="color:#fff;">Rosalie <span style="color:rgba(255,255,255,.5);">Coiffure</span></div>
+        <p style="margin-top:12px;max-width:320px;" data-editable-zone="footer_description">Salon de coiffure et institut à Béziers, sur rendez-vous. Coupe, coloration végétale, soins et coiffure événementielle.</p>
+      </div>
+      <div>
+        <h4>Prestations</h4>
+        <ul>
+          <li><a href="#services">Coupe & brushing</a></li>
+          <li><a href="#services">Coloration</a></li>
+          <li><a href="#services">Soin capillaire</a></li>
+          <li><a href="#services">Événementiel</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Zones</h4>
+        <ul>
+          <li><a href="#zones">Béziers</a></li>
+          <li><a href="#zones">Boujan-sur-Libron</a></li>
+          <li><a href="#zones">Lignan-sur-Orb</a></li>
+          <li><a href="#zones">Bassan</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Rosalie Coiffure & Beauté — NICOSERVICES · SIRET 892 447 561 00019</span>
+      <span>
+        <button type="button" id="mentionsLink" style="background:none;border:none;color:rgba(255,255,255,.5);text-decoration:underline;cursor:pointer;font:inherit;">Mentions légales</button>
+        · <a href="https://admin.locweb.fr">🔒 Administration</a>
+        · <a href="https://locweb.fr" target="_blank" rel="noopener">Créé par LocWeb</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<div class="lead-popup" id="legalModal" aria-hidden="true">
+  <div class="lead-popup-bg" id="legalBg"></div>
+  <div class="lead-popup-box">
+    <button class="lead-popup-close" id="legalClose" aria-label="Fermer">✕</button>
+    <h3>Mentions légales</h3>
+    <p style="font-family:var(--sans);font-size:.82rem;line-height:1.6;">Rosalie Coiffure & Beauté (NICOSERVICES, à titre de démonstration) · Site exemple réalisé par LocWeb, ne correspond à aucune entreprise réelle. SIRET, coordonnées et avis clients fictifs à des fins de démonstration uniquement.</p>
+  </div>
+</div>
+
+<script>
+  window.LOCWEB_CONFIG = { supabaseUrl: '', supabaseAnonKey: '', clientId: '' };
+</script>
+<script src="../contenu-loader.js" defer></script>
+
+<script>
+// Burger mobile
+(function(){
+  const btn = document.getElementById('burgerBtn');
+  const panel = document.getElementById('mobilePanel');
+  const close = document.getElementById('mobilePanelClose');
+  if(!btn) return;
+  btn.addEventListener('click', () => panel.classList.add('open'));
+  close.addEventListener('click', () => panel.classList.remove('open'));
+  panel.querySelectorAll('a').forEach(a => a.addEventListener('click', () => panel.classList.remove('open')));
+})();
+
+// Reveal on scroll
+(function(){
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('on'); io.unobserve(e.target); } });
+  }, { threshold: .1, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+})();
+
+// Compteurs animés
+(function(){
+  document.querySelectorAll('[data-compteur]').forEach((el) => {
+    const cible = parseFloat(el.getAttribute('data-compteur'));
+    const decimals = parseInt(el.getAttribute('data-decimal') || '0', 10);
+    const obs = new IntersectionObserver((entries) => {
+      if(!entries[0].isIntersecting) return;
+      obs.disconnect();
+      const debut = performance.now();
+      (function tick(now){
+        const p = Math.min(1, (now - debut) / 1400);
+        el.textContent = (cible * (1 - Math.pow(1-p,3))).toFixed(decimals);
+        if(p < 1) requestAnimationFrame(tick);
+      })(debut);
+    }, { threshold: .5 });
+    obs.observe(el);
+  });
+})();
+
+// Back to top
+(function(){
+  const btn = document.getElementById('topBtn');
+  window.addEventListener('scroll', () => {
+    btn.classList.toggle('show', window.scrollY > 600);
+  }, { passive: true });
+  btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+})();
+
+// Mentions légales popup
+(function(){
+  const link = document.getElementById('mentionsLink');
+  const modal = document.getElementById('legalModal');
+  const close = document.getElementById('legalClose');
+  const bg = document.getElementById('legalBg');
+  function open(){ modal.classList.add('open'); }
+  function shut(){ modal.classList.remove('open'); }
+  link.addEventListener('click', open);
+  close.addEventListener('click', shut);
+  bg.addEventListener('click', shut);
+})();
+
+// Popup lead capture (au scroll, une seule fois)
+(function(){
+  const popup = document.getElementById('leadPopup');
+  const bg = document.getElementById('leadPopupBg');
+  const closeBtn = document.getElementById('leadPopupClose');
+  const step = document.getElementById('leadChoiceStep');
+  let shown = false;
+  function open(){ if(shown) return; shown = true; popup.classList.add('open'); }
+  function shut(){ popup.classList.remove('open'); }
+  window.addEventListener('scroll', () => { if(window.scrollY > window.innerHeight * 1.2) open(); }, { passive: true });
+  closeBtn.addEventListener('click', shut);
+  bg.addEventListener('click', shut);
+  step.querySelectorAll('button').forEach(b => b.addEventListener('click', () => {
+    step.innerHTML = '<p style="font-family:var(--sans);font-size:.85rem;">Merci ! Appelez-nous directement pour caler un créneau :</p><a href="tel:0652841739" class="btn-primary" style="background:#9c3b52;color:#fff;justify-content:center;margin-top:10px;">📞 06 52 84 17 39</a>';
+  }));
+})();
+
+// Formulaires (démo : pas de vrai backend, juste un état visuel)
+(function(){
+  ['quick-form','contact-form'].forEach((id) => {
+    const form = document.getElementById(id);
+    if(!form) return;
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const status = document.getElementById(id + '-status');
+      if(status) status.textContent = 'Merci, on vous rappelle sous 15 minutes pour caler un créneau.';
+      form.reset();
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
