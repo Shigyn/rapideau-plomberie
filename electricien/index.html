@@ -42,14 +42,14 @@ a{color:inherit;}
 h1,h2,h3{font-weight:800;letter-spacing:-.02em;line-height:1.1;}
 .tag{display:inline-block;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--acc);margin-bottom:10px;}
 
-.urgence-bar{background:var(--dark2);color:#fff;font-size:.78rem;font-weight:600;border-bottom:2px solid var(--acc);}
-.urgence-bar-inner{display:flex;align-items:center;justify-content:space-between;gap:14px;max-width:1180px;margin:0 auto;padding:9px 20px;}
+.urgence-bar{background:var(--dark2);color:#fff;font-size:.78rem;font-weight:600;border-bottom:2px solid var(--acc);height:42px;box-sizing:border-box;}
+.urgence-bar-inner{display:flex;align-items:center;justify-content:space-between;gap:14px;max-width:1180px;height:100%;margin:0 auto;padding:0 20px;}
 @media(min-width:900px){.urgence-bar-inner{padding:9px 5vw;}}
 .urgence-bar-inner span{opacity:.85;}
 .urgence-bar a{background:var(--acc);color:#2b1206;font-weight:800;padding:6px 14px;border-radius:100px;text-decoration:none;white-space:nowrap;font-size:.76rem;flex-shrink:0;}
 
 /* Pas de bandeau menu : header transparent flottant sur le hero, pas de barre pleine, tout passe par le bouton menu */
-header{position:absolute;top:0;left:0;right:0;z-index:500;background:transparent;padding:22px 0;}
+header{position:absolute;top:42px;left:0;right:0;z-index:500;background:transparent;padding:22px 0;}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:0 20px;max-width:1180px;margin:0 auto;}
 @media(min-width:900px){.nav-inner{padding:0 5vw;}}
 .logo{font-weight:900;font-size:1rem;color:#fff;text-decoration:none;white-space:nowrap;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(8px);padding:10px 18px;border-radius:100px;}
