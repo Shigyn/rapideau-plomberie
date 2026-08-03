@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Voltz Électricité — Électricien à Béziers | Mise aux normes & dépannage</title>
+<meta name="description" content="Voltz Électricité — électricien à Béziers, dépannage tableau électrique, mise aux normes, domotique. Intervention rapide, devis gratuit. 07 45 53 14 34.">
+<meta property="og:title" content="Voltz Électricité — Électricien à Béziers">
+<meta property="og:description" content="Dépannage, mise aux normes, domotique. Devis gratuit.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/hero-electricien.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Electrician",
+  "name": "Voltz Électricité",
+  "image": "assets/hero-electricien.jpg",
+  "telephone": "+33745531434",
+  "address": { "@type": "PostalAddress", "addressLocality": "Béziers", "addressRegion": "Occitanie", "addressCountry": "FR" },
+  "areaServed": ["Béziers", "Agde", "Pézenas", "Servian", "Villeneuve-lès-Béziers"],
+  "openingHours": "Mo-Fr 07:30-19:00",
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "94" }
+}
+</script>
+<style>
+:root{
+  --acc:#e0631e; --acc-dark:#7a2f0d; --dark:#1a1a1a; --dark2:#111;
+  --ink:#0d1117; --paper:#f7f7f5; --paper2:#eef1f5; --line:rgba(13,13,15,.1);
+  --sans:'Inter',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:auto;}
+body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.6;overflow-x:hidden;}
+img{max-width:100%;display:block;}
+a{color:inherit;}
+.container{max-width:1180px;margin:0 auto;padding:0 20px;}
+@media(min-width:900px){.container{padding:0 5vw;}}
+h1,h2,h3{font-weight:800;letter-spacing:-.02em;line-height:1.1;}
+.tag{display:inline-block;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--acc);margin-bottom:10px;}
+
+.urgence-bar{background:var(--dark2);color:#fff;text-align:center;font-size:.78rem;font-weight:600;padding:8px 16px;}
+.urgence-bar a{color:var(--acc);font-weight:800;text-decoration:none;}
+
+header{position:sticky;top:0;z-index:500;background:rgba(247,247,245,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;max-width:1180px;margin:0 auto;}
+@media(min-width:900px){.nav-inner{padding:14px 5vw;}}
+.logo{font-weight:900;font-size:1.15rem;color:var(--acc);text-decoration:none;white-space:nowrap;}
+.logo span{color:var(--ink);}
+nav.links{display:none;gap:28px;align-items:center;}
+nav.links a{font-size:.85rem;font-weight:600;text-decoration:none;color:var(--ink);}
+@media(min-width:860px){nav.links{display:flex;}}
+.header-right{display:flex;align-items:center;gap:10px;}
+.google-badge{display:none;align-items:center;gap:5px;font-size:.78rem;font-weight:700;color:var(--ink);background:#fff;border:1px solid var(--line);padding:6px 11px;border-radius:100px;text-decoration:none;}
+@media(min-width:640px){.google-badge{display:inline-flex;}}
+.tel-btn{display:inline-flex;align-items:center;gap:8px;background:var(--acc);color:#fff;font-weight:800;font-size:.85rem;padding:11px 18px;border-radius:100px;text-decoration:none;white-space:nowrap;}
+.burger{display:flex;background:none;border:none;cursor:pointer;padding:6px;}
+@media(min-width:860px){.burger{display:none;}}
+.burger span{display:block;width:22px;height:2px;background:var(--ink);margin:4px 0;}
+
+.hero{position:relative;min-height:640px;display:flex;align-items:center;overflow:hidden;color:#fff;}
+.hero-bg{position:absolute;inset:0;background-image:linear-gradient(100deg,rgba(17,17,17,.94) 0%,rgba(17,17,17,.82) 38%,rgba(26,26,26,.55) 65%,rgba(26,26,26,.3) 100%),url('assets/hero-electricien.jpg');background-size:cover;background-position:center 25%;}
+.hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center;width:100%;padding:70px 20px;max-width:1180px;margin:0 auto;}
+@media(min-width:900px){.hero-inner{padding:70px 5vw;}}
+@media(max-width:900px){.hero-inner{grid-template-columns:1fr;gap:36px;padding:44px 20px 40px;}}
+.hero-tag{display:inline-block;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:var(--acc);background:rgba(255,255,255,.1);padding:7px 14px;border-radius:100px;margin-bottom:18px;}
+.hero h1{font-size:clamp(2rem,4.6vw,3.2rem);line-height:1.08;margin-bottom:16px;}
+.hero h1 em{font-style:normal;color:var(--acc);}
+.hero-sub{font-size:1.02rem;color:rgba(255,255,255,.82);max-width:480px;margin-bottom:26px;line-height:1.6;}
+.hero-badges{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:30px;}
+.hero-badge{display:flex;align-items:center;gap:7px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.14);font-size:.78rem;font-weight:600;padding:8px 14px;border-radius:100px;}
+.hero-cta-row{display:flex;flex-wrap:wrap;gap:14px;}
+.btn-primary{display:inline-flex;align-items:center;gap:9px;background:#fff;color:var(--dark2);font-weight:800;font-size:.95rem;padding:16px 26px;border-radius:100px;text-decoration:none;}
+.btn-outline{display:inline-flex;align-items:center;gap:9px;background:transparent;border:1.5px solid rgba(255,255,255,.4);color:#fff;font-weight:700;font-size:.95rem;padding:15px 24px;border-radius:100px;text-decoration:none;}
+
+.hero-form{position:relative;z-index:2;background:rgba(255,255,255,.97);color:var(--ink);border-radius:18px;padding:28px 26px;box-shadow:0 30px 70px rgba(0,0,0,.35);}
+.hero-form h3{font-size:1.1rem;margin-bottom:4px;}
+.hero-form p.sub{font-size:.8rem;color:#666;margin-bottom:18px;}
+.hero-form .row{margin-bottom:12px;}
+.hero-form label{display:block;font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:#888;margin-bottom:5px;}
+.hero-form input,.hero-form select{width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:9px;font-family:inherit;font-size:.9rem;background:#fff;}
+.hero-form input:focus,.hero-form select:focus{outline:none;border-color:var(--acc);}
+.hero-form button{width:100%;background:var(--acc);color:#fff;font-weight:800;font-size:.92rem;padding:14px;border:none;border-radius:9px;cursor:pointer;margin-top:6px;}
+.hero-form button:hover{opacity:.92;}
+.hero-form .status{font-size:.78rem;margin-top:10px;text-align:center;}
+
+.marquee{background:var(--ink);color:#fff;overflow:hidden;white-space:nowrap;padding:14px 0;}
+.marquee-track{display:inline-flex;gap:36px;animation:mq 26s linear infinite;}
+.marquee span{font-size:.82rem;font-weight:600;letter-spacing:.03em;color:rgba(255,255,255,.85);}
+.marquee .dot{color:var(--acc);margin-left:36px;}
+@keyframes mq{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+@media(prefers-reduced-motion:reduce){.marquee-track{animation:none;}}
+
+section{padding:80px 0;}
+.s-head{margin-bottom:44px;max-width:640px;}
+.s-head h2{font-size:clamp(1.6rem,3.2vw,2.3rem);}
+
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+@media(max-width:900px){.services-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:600px){.services-grid{grid-template-columns:1fr;}}
+.service-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px;}
+.service-card .ico{font-size:1.7rem;margin-bottom:14px;}
+.service-card h3{font-size:1.02rem;margin-bottom:8px;}
+.service-card p{font-size:.86rem;color:#666;margin-bottom:14px;}
+.service-tag{display:inline-block;font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--acc);background:var(--paper2);padding:5px 10px;border-radius:100px;}
+
+#realisations{background:var(--paper2);}
+.real-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+@media(max-width:700px){.real-grid{grid-template-columns:1fr 1fr;}}
+.real-item{border-radius:14px;overflow:hidden;aspect-ratio:4/3;position:relative;}
+.real-item img{width:100%;height:100%;object-fit:cover;}
+.real-item .cap{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(17,17,17,.85));color:#fff;font-size:.76rem;font-weight:600;padding:24px 14px 12px;}
+
+.expertise-bloc{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;margin-bottom:70px;}
+.expertise-bloc:last-child{margin-bottom:0;}
+.expertise-bloc.rev>.expertise-img{order:2;}
+@media(max-width:800px){.expertise-bloc{grid-template-columns:1fr;gap:24px;}.expertise-bloc.rev>.expertise-img{order:0;}}
+.expertise-img{border-radius:16px;overflow:hidden;aspect-ratio:4/3;}
+.expertise-img img{width:100%;height:100%;object-fit:cover;}
+.expertise-txt h3{font-size:1.4rem;margin-bottom:14px;}
+.expertise-txt ul{list-style:none;display:flex;flex-direction:column;gap:10px;margin-top:16px;}
+.expertise-txt li{font-size:.9rem;color:#444;display:flex;gap:10px;align-items:flex-start;}
+.expertise-txt li::before{content:'✓';color:var(--acc);font-weight:800;flex-shrink:0;}
+
+#chiffres{background:var(--dark2);color:#fff;}
+.chiffres-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center;}
+@media(max-width:700px){.chiffres-grid{grid-template-columns:1fr 1fr;}}
+.chiffre-num{font-size:clamp(2rem,4vw,2.8rem);font-weight:900;color:var(--acc);}
+.chiffre-lbl{font-size:.8rem;color:rgba(255,255,255,.7);margin-top:6px;}
+
+.charte-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+@media(max-width:800px){.charte-grid{grid-template-columns:1fr 1fr;}}
+.charte-item{text-align:left;}
+.charte-num{font-family:var(--sans);font-weight:900;font-size:1.6rem;color:transparent;-webkit-text-stroke:1.5px var(--acc);display:block;margin-bottom:10px;}
+.charte-item h3{font-size:.98rem;margin-bottom:6px;}
+.charte-item p{font-size:.82rem;color:#666;}
+
+#tarifs{background:var(--paper2);}
+.tarifs-list{display:flex;flex-direction:column;gap:2px;background:var(--line);border-radius:14px;overflow:hidden;}
+.tarif-row{background:#fff;display:flex;justify-content:space-between;align-items:center;padding:18px 24px;flex-wrap:wrap;gap:6px;}
+.tarif-row .name{font-weight:700;font-size:.94rem;}
+.tarif-row .desc{font-size:.8rem;color:#666;display:block;}
+.tarif-row .price{font-weight:900;font-size:1.1rem;color:var(--acc);white-space:nowrap;}
+
+.zones-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;}
+@media(max-width:800px){.zones-grid{grid-template-columns:repeat(2,1fr);}}
+.zone-item{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;text-align:center;font-weight:700;font-size:.88rem;}
+.zone-item.base{background:var(--acc);color:#fff;border-color:var(--acc);}
+.zone-item .sub{display:block;font-size:.66rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;opacity:.7;margin-top:3px;}
+
+#garanties{background:var(--dark);color:#fff;}
+.garanties-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+@media(max-width:800px){.garanties-grid{grid-template-columns:1fr 1fr;}}
+.garantie-card{background:rgba(255,255,255,.08);border-radius:14px;padding:22px;}
+.garantie-card .ico{font-size:1.5rem;margin-bottom:10px;}
+.garantie-card h3{font-size:.92rem;margin-bottom:6px;}
+.garantie-card p{font-size:.8rem;color:rgba(255,255,255,.75);}
+
+.contact-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;}
+@media(max-width:800px){.contact-grid{grid-template-columns:1fr;}}
+.contact-form .row{margin-bottom:16px;}
+.contact-form label{display:block;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:#777;margin-bottom:6px;}
+.contact-form input,.contact-form textarea{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:10px;font-family:inherit;font-size:.92rem;}
+.contact-form textarea{min-height:110px;resize:vertical;}
+.contact-form button{background:var(--acc);color:#fff;font-weight:800;font-size:.95rem;padding:15px 28px;border:none;border-radius:10px;cursor:pointer;}
+.contact-side{background:var(--paper2);border-radius:16px;padding:30px;}
+.contact-side .item{display:flex;gap:14px;margin-bottom:22px;}
+.contact-side .item:last-child{margin-bottom:0;}
+.contact-side .item .ico{font-size:1.3rem;}
+.contact-side .item strong{display:block;font-size:.92rem;margin-bottom:2px;}
+.contact-side .item span{font-size:.84rem;color:#666;}
+
+footer{background:var(--ink);color:rgba(255,255,255,.6);padding:50px 0 26px;font-size:.84rem;}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:36px;margin-bottom:36px;}
+@media(max-width:700px){.footer-grid{grid-template-columns:1fr;gap:26px;}}
+.footer-grid h4{color:#fff;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin-bottom:14px;}
+.footer-grid ul{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.footer-grid a{text-decoration:none;color:rgba(255,255,255,.6);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.76rem;}
+.footer-bottom a{text-decoration:underline;color:rgba(255,255,255,.5);}
+
+.wa-float{position:fixed;bottom:24px;right:24px;z-index:600;background:#25d366;color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 10px 26px rgba(0,0,0,.3);font-size:1.4rem;}
+.top-btn{position:fixed;bottom:24px;left:24px;z-index:600;background:#fff;border:1px solid var(--line);width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .25s;font-size:1.1rem;}
+.top-btn.show{opacity:1;pointer-events:auto;}
+
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1);}
+.rv.on{opacity:1;transform:none;}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;}}
+
+.lead-popup{position:fixed;inset:0;z-index:9000;display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;pointer-events:none;transition:opacity .3s;}
+.lead-popup.open{opacity:1;pointer-events:auto;}
+.lead-popup-bg{position:absolute;inset:0;background:rgba(10,10,10,.6);}
+.lead-popup-box{position:relative;background:#fff;border-radius:18px;padding:30px;max-width:380px;width:100%;box-shadow:0 30px 70px rgba(0,0,0,.4);}
+.lead-popup-box h3{font-size:1.15rem;margin-bottom:8px;}
+.lead-popup-box p{font-size:.85rem;color:#666;margin-bottom:18px;}
+.lead-popup-close{position:absolute;top:14px;right:14px;background:var(--paper2);border:none;width:30px;height:30px;border-radius:50%;cursor:pointer;}
+.lead-choice{display:flex;flex-direction:column;gap:10px;}
+.lead-choice button{padding:13px;border-radius:10px;border:1px solid var(--line);background:#fff;font-family:inherit;font-size:.88rem;font-weight:600;cursor:pointer;text-align:left;}
+.lead-choice button:hover{border-color:var(--acc);}
+
+.mobile-panel{position:fixed;top:0;left:0;right:0;bottom:0;z-index:900;background:#fff;transform:translateX(100%);transition:transform .3s;padding:90px 30px 30px;}
+.mobile-panel.open{transform:translateX(0);}
+.mobile-panel a{display:block;padding:16px 0;font-size:1.1rem;font-weight:700;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);}
+.mobile-panel-close{position:absolute;top:20px;right:20px;background:none;border:none;font-size:1.6rem;cursor:pointer;}
+</style>
+</head>
+<body>
+
+<div class="urgence-bar">⚡ Panne électrique ? Diagnostic sous 1h — <a href="tel:0745531434">07 45 53 14 34</a></div>
+
+<header>
+  <div class="nav-inner">
+    <a href="#" class="logo">Voltz <span>Électricité</span></a>
+    <nav class="links">
+      <a href="#services">Services</a>
+      <a href="#realisations">Réalisations</a>
+      <a href="#zones">Zones</a>
+      <a href="#garanties">Garanties</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-right">
+      <a href="https://www.google.com/maps" target="_blank" rel="noopener" class="google-badge">★ 4.8 Google</a>
+      <a href="tel:0745531434" class="tel-btn">📞 07 45 53 14 34</a>
+      <button class="burger" id="burgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-panel" id="mobilePanel">
+  <button class="mobile-panel-close" id="mobilePanelClose" aria-label="Fermer">✕</button>
+  <a href="#services">Services</a>
+  <a href="#realisations">Réalisations</a>
+  <a href="#zones">Zones</a>
+  <a href="#garanties">Garanties</a>
+  <a href="#contact">Contact</a>
+  <a href="tel:0745531434">📞 07 45 53 14 34</a>
+</div>
+
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div>
+      <span class="hero-tag" data-editable-zone="hero_tag">Électricien à Béziers — RGE certifié</span>
+      <h1><span data-editable-zone="hero_titre">Une panne électrique ?</span> <em data-editable-zone="hero_titre_accent">On sécurise votre installation.</em></h1>
+      <p class="hero-sub" data-editable-zone="hero_sous_titre">Dépannage, mise aux normes, tableau électrique, domotique : Voltz Électricité intervient à Béziers et alentours, diagnostic gratuit avant toute intervention.</p>
+      <div class="hero-badges">
+        <span class="hero-badge">✅ Devis gratuit</span>
+        <span class="hero-badge">⚡ Diagnostic sous 1h</span>
+        <span class="hero-badge">🛡 Certifié RGE</span>
+      </div>
+      <div class="hero-cta-row">
+        <a href="tel:0745531434" class="btn-primary">📞 Appeler maintenant</a>
+        <a href="#contact" class="btn-outline">Demander un devis</a>
+      </div>
+    </div>
+    <form class="hero-form" id="quick-form">
+      <h3>Devis gratuit en 2 minutes</h3>
+      <p class="sub">Un électricien vous rappelle sous 15 minutes.</p>
+      <div class="row"><label>Nom</label><input type="text" name="nom" required></div>
+      <div class="row"><label>Téléphone</label><input type="tel" name="telephone" required></div>
+      <div class="row">
+        <label>Votre besoin</label>
+        <select name="besoin">
+          <option>Panne / coupure</option>
+          <option>Mise aux normes</option>
+          <option>Tableau électrique</option>
+          <option>Domotique</option>
+          <option>Autre demande</option>
+        </select>
+      </div>
+      <button type="submit">Être rappelé →</button>
+      <p class="status" id="quick-form-status"></p>
+    </form>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Électricien Béziers<span class="dot">◆</span></span>
+    <span>Mise aux normes<span class="dot">◆</span></span>
+    <span>Tableau électrique<span class="dot">◆</span></span>
+    <span>Domotique<span class="dot">◆</span></span>
+    <span>Dépannage panne<span class="dot">◆</span></span>
+    <span>Devis gratuit<span class="dot">◆</span></span>
+    <span>Certifié RGE<span class="dot">◆</span></span>
+    <span>Électricien Béziers<span class="dot">◆</span></span>
+    <span>Mise aux normes<span class="dot">◆</span></span>
+    <span>Tableau électrique<span class="dot">◆</span></span>
+    <span>Domotique<span class="dot">◆</span></span>
+    <span>Dépannage panne<span class="dot">◆</span></span>
+    <span>Devis gratuit<span class="dot">◆</span></span>
+    <span>Certifié RGE<span class="dot">◆</span></span>
+  </div>
+</div>
+
+<section id="services">
+  <div class="container">
+    <div class="s-head rv">
+      <span class="tag">Nos services</span>
+      <h2>Une installation électrique fiable et aux normes.</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card rv"><div class="ico">⚡</div><h3 data-editable-zone="service_1_titre">Dépannage panne</h3><p data-editable-zone="service_1_desc">Coupure, disjoncteur qui saute, court-circuit : intervention rapide pour rétablir le courant.</p><span class="service-tag">Diagnostic 1h</span></div>
+      <div class="service-card rv"><div class="ico">🧰</div><h3 data-editable-zone="service_2_titre">Mise aux normes</h3><p data-editable-zone="service_2_desc">Mise en conformité NF C 15-100, indispensable avant une vente ou une location.</p><span class="service-tag">Attestation Consuel</span></div>
+      <div class="service-card rv"><div class="ico">🔌</div><h3 data-editable-zone="service_3_titre">Tableau électrique</h3><p data-editable-zone="service_3_desc">Remplacement ou modernisation de tableau électrique, toutes marques.</p><span class="service-tag">Sécurité renforcée</span></div>
+      <div class="service-card rv"><div class="ico">🏠</div><h3 data-editable-zone="service_4_titre">Domotique</h3><p data-editable-zone="service_4_desc">Éclairage connecté, volets automatisés, pilotage à distance de votre installation.</p><span class="service-tag">Sur mesure</span></div>
+      <div class="service-card rv"><div class="ico">🏗</div><h3 data-editable-zone="service_5_titre">Installation neuve</h3><p data-editable-zone="service_5_desc">Câblage complet pour construction ou rénovation, du tableau aux prises.</p><span class="service-tag">Devis gratuit</span></div>
+      <div class="service-card rv"><div class="ico">🔍</div><h3 data-editable-zone="service_6_titre">Recherche de panne</h3><p data-editable-zone="service_6_desc">Détection précise de l'origine d'un dysfonctionnement électrique avant réparation.</p><span class="service-tag">Sans casse</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="realisations">
+  <div class="container">
+    <div class="s-head rv"><span class="tag">Nos réalisations</span><h2>Des installations propres, conformes, documentées.</h2></div>
+    <div class="real-grid">
+      <div class="real-item rv"><img src="assets/hero-electricien.jpg" alt="Intervention électrique, Béziers" loading="lazy"><span class="cap">Mise aux normes — Béziers centre</span></div>
+      <div class="real-item rv"><img src="assets/tableau-electrique.jpg" alt="Remplacement tableau électrique" loading="lazy"><span class="cap">Remplacement tableau électrique</span></div>
+      <div class="real-item rv"><img src="assets/cablage.jpg" alt="Câblage neuf" loading="lazy"><span class="cap">Câblage installation neuve</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="s-head rv"><span class="tag">Notre expertise</span><h2>Le bon diagnostic avant toute intervention.</h2></div>
+    <div class="expertise-bloc rv">
+      <div class="expertise-img"><img src="assets/tableau-electrique.jpg" alt="Diagnostic tableau électrique" loading="lazy"></div>
+      <div class="expertise-txt">
+        <h3>Mise aux normes NF C 15-100</h3>
+        <p>Obligatoire pour une vente ou une location, la mise aux normes protège aussi votre famille au quotidien. On identifie chaque point de non-conformité avant de vous proposer un devis clair.</p>
+        <ul><li>Diagnostic complet de l'installation</li><li>Devis détaillé poste par poste</li><li>Attestation Consuel fournie</li></ul>
+      </div>
+    </div>
+    <div class="expertise-bloc rv rev">
+      <div class="expertise-img"><img src="assets/cablage.jpg" alt="Câblage domotique" loading="lazy"></div>
+      <div class="expertise-txt">
+        <h3>Domotique et éclairage connecté</h3>
+        <p>Volets, éclairage, chauffage pilotables depuis votre téléphone — installation compatible avec les box du marché, sans dépendance à une marque unique.</p>
+        <ul><li>Compatible avec les principales box domotique</li><li>Installation propre, câblage caché</li><li>Prise en main expliquée après pose</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="chiffres">
+  <div class="container">
+    <div class="chiffres-grid">
+      <div class="rv"><div class="chiffre-num" data-compteur="9">0</div><div class="chiffre-lbl">Ans d'expérience</div></div>
+      <div class="rv"><div class="chiffre-num" data-compteur="4.8" data-decimal="1">0</div><div class="chiffre-lbl">Note Google</div></div>
+      <div class="rv"><div class="chiffre-num" data-compteur="1">0</div><div class="chiffre-lbl">Heure de diagnostic</div></div>
+      <div class="rv"><div class="chiffre-num" data-compteur="100">0</div><div class="chiffre-lbl">% devis gratuits</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="s-head rv"><span class="tag">Nos engagements</span><h2>Une charte simple, respectée à chaque intervention.</h2></div>
+    <div class="charte-grid">
+      <div class="charte-item rv"><span class="charte-num">01</span><h3>Sécurité</h3><p>Chaque installation testée et certifiée avant livraison.</p></div>
+      <div class="charte-item rv"><span class="charte-num">02</span><h3>Certifié RGE</h3><p>Habilitation électrique à jour, assurance décennale.</p></div>
+      <div class="charte-item rv"><span class="charte-num">03</span><h3>Transparence</h3><p>Devis détaillé avant toute intervention, aucune surprise.</p></div>
+      <div class="charte-item rv"><span class="charte-num">04</span><h3>Réactivité</h3><p>Diagnostic sous 1h pour toute panne signalée.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="tarifs">
+  <div class="container">
+    <div class="s-head rv"><span class="tag">Tarifs</span><h2>Des forfaits clairs, sans surprise.</h2></div>
+    <div class="tarifs-list rv">
+      <div class="tarif-row"><div><span class="name">Déplacement + diagnostic</span><span class="desc">Offert si intervention réalisée</span></div><span class="price" data-editable-zone="prix_diagnostic">39€</span></div>
+      <div class="tarif-row"><div><span class="name">Mise aux normes tableau</span><span class="desc">Selon état de l'installation</span></div><span class="price" data-editable-zone="prix_normes">À partir de 350€</span></div>
+      <div class="tarif-row"><div><span class="name">Recherche de panne</span><span class="desc">Détection précise avant réparation</span></div><span class="price" data-editable-zone="prix_recherche">À partir de 89€</span></div>
+      <div class="tarif-row"><div><span class="name">Installation domotique</span><span class="desc">Selon nombre de points</span></div><span class="price" data-editable-zone="prix_domotique">Sur devis</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="zones">
+  <div class="container">
+    <div class="s-head rv"><span class="tag">Zones d'intervention</span><h2>Basés à Béziers, on se déplace dans tout le secteur.</h2></div>
+    <div class="zones-grid rv">
+      <div class="zone-item base">Béziers<span class="sub">Base locale</span></div>
+      <div class="zone-item">Agde</div>
+      <div class="zone-item">Pézenas</div>
+      <div class="zone-item">Servian</div>
+      <div class="zone-item">Villeneuve-lès-Béziers</div>
+    </div>
+  </div>
+</section>
+
+<section id="garanties">
+  <div class="container">
+    <div class="s-head rv"><span class="tag" style="color:#fff;">Garanties</span><h2>Des garanties concrètes, pas juste des mots.</h2></div>
+    <div class="garanties-grid">
+      <div class="garantie-card rv"><div class="ico">🛡</div><h3>Assurance décennale</h3><p>Tous travaux couverts pendant 10 ans.</p></div>
+      <div class="garantie-card rv"><div class="ico">📋</div><h3>Devis gratuit</h3><p>Chiffrage détaillé, sans engagement.</p></div>
+      <div class="garantie-card rv"><div class="ico">⚡</div><h3>Diagnostic sous 1h</h3><p>Garanti pour toute panne signalée.</p></div>
+      <div class="garantie-card rv"><div class="ico">✅</div><h3>Certifié RGE</h3><p>Habilitation à jour, contrôlée chaque année.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="s-head rv"><span class="tag">Contact</span><h2>Une question, une urgence ? On vous répond vite.</h2></div>
+    <div class="contact-grid">
+      <form class="contact-form rv" id="contact-form">
+        <div class="row"><label>Nom</label><input type="text" name="nom" required></div>
+        <div class="row"><label>Téléphone</label><input type="tel" name="telephone" required></div>
+        <div class="row"><label>Ville</label><input type="text" name="ville"></div>
+        <div class="row"><label>Message</label><textarea name="message" required></textarea></div>
+        <button type="submit">Envoyer ma demande</button>
+        <p class="status" id="contact-form-status" style="margin-top:12px;font-size:.85rem;"></p>
+      </form>
+      <div class="contact-side rv">
+        <div class="item"><span class="ico">📞</span><div><strong>Téléphone</strong><span><a href="tel:0745531434" data-editable-tel="tel_contact">07 45 53 14 34</a></span></div></div>
+        <div class="item"><span class="ico">✉️</span><div><strong>Email</strong><span><a href="mailto:contact@voltz-electricite.fr" data-editable-mailto="email_contact">contact@voltz-electricite.fr</a></span></div></div>
+        <div class="item"><span class="ico">🛡</span><div><strong>Garantie</strong><span>Devis gratuit, diagnostic sous 1h</span></div></div>
+        <div class="item"><span class="ico">📍</span><div><strong>Zone</strong><span>Béziers et alentours (15km)</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<a href="https://wa.me/33745531434" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+<button class="top-btn" id="topBtn" aria-label="Retour en haut">↑</button>
+
+<div class="lead-popup" id="leadPopup" aria-hidden="true">
+  <div class="lead-popup-bg" id="leadPopupBg"></div>
+  <div class="lead-popup-box">
+    <button class="lead-popup-close" id="leadPopupClose" aria-label="Fermer">✕</button>
+    <h3>Besoin d'un électricien ?</h3>
+    <p>Dites-nous où vous êtes et ce qu'il se passe, on vous rappelle en priorité.</p>
+    <div class="lead-choice" id="leadChoiceStep">
+      <button data-val="Béziers">📍 Je suis à Béziers</button>
+      <button data-val="Alentours">📍 Je suis dans les environs</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="color:#fff;">Voltz <span style="color:rgba(255,255,255,.5);">Électricité</span></div>
+        <p style="margin-top:12px;max-width:320px;" data-editable-zone="footer_description">Électricien artisan à Béziers, dépannage, mise aux normes et domotique, devis gratuit sur toute la zone.</p>
+      </div>
+      <div><h4>Services</h4><ul><li><a href="#services">Dépannage panne</a></li><li><a href="#services">Mise aux normes</a></li><li><a href="#services">Tableau électrique</a></li><li><a href="#services">Domotique</a></li></ul></div>
+      <div><h4>Zones</h4><ul><li><a href="#zones">Béziers</a></li><li><a href="#zones">Agde</a></li><li><a href="#zones">Pézenas</a></li><li><a href="#zones">Servian</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Voltz Électricité — NICOSERVICES · SIRET 909 584 138 00012</span>
+      <span>
+        <button type="button" id="mentionsLink" style="background:none;border:none;color:rgba(255,255,255,.5);text-decoration:underline;cursor:pointer;font:inherit;">Mentions légales</button>
+        · <a href="https://admin.locweb.fr">🔒 Administration</a>
+        · <a href="https://locweb.fr" target="_blank" rel="noopener">Créé par LocWeb</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<div class="lead-popup" id="legalModal" aria-hidden="true">
+  <div class="lead-popup-bg" id="legalBg"></div>
+  <div class="lead-popup-box">
+    <button class="lead-popup-close" id="legalClose" aria-label="Fermer">✕</button>
+    <h3>Mentions légales</h3>
+    <p style="font-size:.82rem;line-height:1.6;">Voltz Électricité (NICOSERVICES, à titre de démonstration) · Site exemple réalisé par LocWeb, ne correspond à aucune entreprise réelle. SIRET, coordonnées et avis clients fictifs à des fins de démonstration uniquement.</p>
+  </div>
+</div>
+
+<script>
+  window.LOCWEB_CONFIG = { supabaseUrl: '', supabaseAnonKey: '', clientId: '' };
+</script>
+<script src="../contenu-loader.js" defer></script>
+
+<script>
+(function(){
+  const btn = document.getElementById('burgerBtn');
+  const panel = document.getElementById('mobilePanel');
+  const close = document.getElementById('mobilePanelClose');
+  if(!btn) return;
+  btn.addEventListener('click', () => panel.classList.add('open'));
+  close.addEventListener('click', () => panel.classList.remove('open'));
+  panel.querySelectorAll('a').forEach(a => a.addEventListener('click', () => panel.classList.remove('open')));
+})();
+
+(function(){
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('on'); io.unobserve(e.target); } });
+  }, { threshold: .1, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+})();
+
+(function(){
+  document.querySelectorAll('[data-compteur]').forEach((el) => {
+    const cible = parseFloat(el.getAttribute('data-compteur'));
+    const decimals = parseInt(el.getAttribute('data-decimal') || '0', 10);
+    const obs = new IntersectionObserver((entries) => {
+      if(!entries[0].isIntersecting) return;
+      obs.disconnect();
+      const debut = performance.now();
+      (function tick(now){
+        const p = Math.min(1, (now - debut) / 1400);
+        el.textContent = (cible * (1 - Math.pow(1-p,3))).toFixed(decimals);
+        if(p < 1) requestAnimationFrame(tick);
+      })(debut);
+    }, { threshold: .5 });
+    obs.observe(el);
+  });
+})();
+
+(function(){
+  const btn = document.getElementById('topBtn');
+  window.addEventListener('scroll', () => { btn.classList.toggle('show', window.scrollY > 600); }, { passive: true });
+  btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+})();
+
+(function(){
+  const link = document.getElementById('mentionsLink');
+  const modal = document.getElementById('legalModal');
+  const close = document.getElementById('legalClose');
+  const bg = document.getElementById('legalBg');
+  function open(){ modal.classList.add('open'); }
+  function shut(){ modal.classList.remove('open'); }
+  link.addEventListener('click', open);
+  close.addEventListener('click', shut);
+  bg.addEventListener('click', shut);
+})();
+
+(function(){
+  const popup = document.getElementById('leadPopup');
+  const bg = document.getElementById('leadPopupBg');
+  const closeBtn = document.getElementById('leadPopupClose');
+  const step = document.getElementById('leadChoiceStep');
+  let shown = false;
+  function open(){ if(shown) return; shown = true; popup.classList.add('open'); }
+  function shut(){ popup.classList.remove('open'); }
+  window.addEventListener('scroll', () => { if(window.scrollY > window.innerHeight * 1.2) open(); }, { passive: true });
+  closeBtn.addEventListener('click', shut);
+  bg.addEventListener('click', shut);
+  step.querySelectorAll('button').forEach(b => b.addEventListener('click', () => {
+    step.innerHTML = '<p style="font-size:.85rem;">Merci ! Appelez-nous directement pour un traitement immédiat :</p><a href="tel:0745531434" class="btn-primary" style="background:#e0631e;color:#fff;justify-content:center;margin-top:10px;">📞 07 45 53 14 34</a>';
+  }));
+})();
+
+(function(){
+  ['quick-form','contact-form'].forEach((id) => {
+    const form = document.getElementById(id);
+    if(!form) return;
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const status = document.getElementById(id + '-status');
+      if(status) status.textContent = 'Merci, un électricien vous rappelle sous 15 minutes.';
+      form.reset();
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
