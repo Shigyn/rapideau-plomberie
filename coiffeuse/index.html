@@ -43,8 +43,11 @@ h1,h2,h3{font-family:var(--serif);font-weight:600;letter-spacing:-.01em;line-hei
 .tag{display:inline-block;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--rose);margin-bottom:10px;}
 
 /* Bandeau annonce */
-.urgence-bar{background:var(--rose-dark);color:#fff;text-align:center;font-size:.78rem;font-weight:600;padding:8px 16px;}
+.urgence-bar{background:var(--rose-dark);color:#fff;font-size:.78rem;font-weight:600;position:relative;overflow:hidden;height:38px;}
+.urgence-bar-msg{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:6px;padding:0 16px;text-align:center;opacity:0;transition:opacity .6s ease;}
+.urgence-bar-msg.on{opacity:1;}
 .urgence-bar a{color:var(--gold);font-weight:800;text-decoration:none;}
+@media(prefers-reduced-motion:reduce){.urgence-bar-msg{transition:none;}}
 
 /* Header sticky */
 header{position:sticky;top:0;z-index:500;background:rgba(250,246,242,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);}
@@ -232,7 +235,10 @@ footer{background:var(--ink);color:rgba(255,255,255,.6);padding:50px 0 26px;font
 </head>
 <body>
 
-<div class="urgence-bar">✨ Coloration végétale bio disponible — <a href="#contact">Prendre rendez-vous</a></div>
+<div class="urgence-bar" id="annonceBar">
+  <span class="urgence-bar-msg on">✨ Coloration végétale bio disponible — <a href="#contact">Prendre rendez-vous</a></span>
+  <span class="urgence-bar-msg">📅 Créneaux disponibles cette semaine — <a href="tel:0652841739">06 52 84 17 39</a></span>
+</div>
 
 <header>
   <div class="nav-inner">
@@ -620,6 +626,18 @@ footer{background:var(--ink);color:rgba(255,255,255,.6);padding:50px 0 26px;font
 <script src="../contenu-loader.js" defer></script>
 
 <script>
+// Bandeau d'annonce : rotation entre 2 messages
+(function(){
+  const msgs = document.querySelectorAll('#annonceBar .urgence-bar-msg');
+  if (msgs.length < 2) return;
+  let i = 0;
+  setInterval(() => {
+    msgs[i].classList.remove('on');
+    i = (i + 1) % msgs.length;
+    msgs[i].classList.add('on');
+  }, 4500);
+})();
+
 // Burger mobile
 (function(){
   const btn = document.getElementById('burgerBtn');
